@@ -13,7 +13,7 @@ CREATE TABLE cliente (
 );
 
 CREATE TABLE vendedor (
-	id_vendedor 	INT(11) PRIMARY KEY AUTO_INCREMENT
+	id_vendedor		INT(11) PRIMARY KEY AUTO_INCREMENT
 	,nome			VARCHAR(50)	
 	,nascimento		DATE
 );
