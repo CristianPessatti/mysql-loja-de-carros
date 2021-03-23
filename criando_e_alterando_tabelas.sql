@@ -1,4 +1,6 @@
-CREATE TABLE carro (
+USE loja_de_carros;
+
+CREATE TABLE IF NOT EXISTS carro (
 	id_carro		INT(11) PRIMARY KEY AUTO_INCREMENT
 	,modelo			VARCHAR(50)
 	,cor			VARCHAR(15)
@@ -6,13 +8,13 @@ CREATE TABLE carro (
 	,ano_modelo		YEAR(4)
 );
 
-CREATE TABLE cliente (
+CREATE TABLE IF NOT EXISTS cliente (
 	id_cliente		INT(11) PRIMARY KEY AUTO_INCREMENT
 	,nome			VARCHAR(50)
 	,nascimento		DATE
 );
 
-CREATE TABLE vendedor (
+CREATE TABLE IF NOT EXISTS  vendedor (
 	id_vendedor		INT(11) PRIMARY KEY AUTO_INCREMENT
 	,nome			VARCHAR(50)	
 	,nascimento		DATE
